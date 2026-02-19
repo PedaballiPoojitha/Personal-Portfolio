@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(-45deg, #667eea, #764ba2, #ff6a88, #ff99ac);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  color: white;
+}
+
+@keyframes gradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  position: fixed;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffdd57;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero span {
+  color: #ffdd57;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #ffdd57;
+  color: black;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: white;
+}
+
+/* Sections */
+.section {
+  padding: 100px 50px;
+  text-align: center;
+}
+
+.glass {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  margin: 50px;
+}
+
+/* Skills */
+.skill {
+  margin: 20px auto;
+  width: 60%;
+  text-align: left;
+}
+
+.progress {
+  background: rgba(255,255,255,0.2);
+  height: 10px;
+  border-radius: 10px;
+}
+
+.progress div {
+  height: 100%;
+  background: #ffdd57;
+  border-radius: 10px;
+}
+
+/* Projects */
+.project-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  width: 250px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Contact */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+
+form input, form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.social {
+  margin-top: 20px;
+}
+
+.social a {
+  color: white;
+  font-size: 22px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  color: #ffdd57;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.6);
+}
